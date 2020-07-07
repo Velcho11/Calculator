@@ -1,7 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Summation (+)
+   
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +10,22 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Summation (+)</ion-title>
     </ion-toolbar>
   </ion-header>
+  
+<ion-item>
+<ion-label position="fixed" style="color:#00b7ff">Number 1:</ion-label>
+<ion-input type="number" [(ngModel)]="p"></ion-input>
+</ion-item>
+<ion-item>
+<ion-label position="fixed" style="color:#00b7ff">Number 2:</ion-label>
+<ion-input type="number" [(ngModel)]="q"></ion-input>
+</ion-item>
+<ion-button (click)="onAdd()" style="float:right">Summation</ion-button>
+<p><ion-text style="color:#00b7ff">&emsp;Result:</ion-text>&emsp;{{ result }}</p>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+
+
 </ion-content>

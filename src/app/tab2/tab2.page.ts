@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-
-  constructor() {}
+  result: number
+  a: number = 0;
+  b: number = 0;
+  constructor() {
+    }
+    onAdd(){
+      this.result = this.a - this.b;
+      }
 
 }

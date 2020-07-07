@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  result: number
+  c: number = 0;
+  d: number = 0;
+  constructor() {
+    }
+    onAdd(){
+      this.result = this.c * this.d;
+      }
 
 }

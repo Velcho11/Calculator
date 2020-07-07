@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Multiplication (*)
+      Division (/)
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,20 +9,18 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Tab 4</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-item>
     <ion-label position="fixed" style="color:#00b7ff">Number 1:</ion-label>
-    <ion-input type="number" [(ngModel)]="c"></ion-input>
+    <ion-input type="number" [(ngModel)]="x"></ion-input>
     </ion-item>
     <ion-item>
     <ion-label position="fixed" style="color:#00b7ff">Number 2:</ion-label>
-    <ion-input type="number" [(ngModel)]="d"></ion-input>
+    <ion-input type="number" [(ngModel)]="z"></ion-input>
     </ion-item>
-    <ion-button (click)="onAdd()" style="float:right">Multiplication</ion-button>
+    <ion-button (click)="onAdd()" style="float:right">Division</ion-button>
     <p><ion-text style="color:#00b7ff">&emsp;Result:</ion-text>&emsp;{{ result }}</p>
-    
-
   
 </ion-content>

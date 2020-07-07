@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Substraction (-)
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,6 +12,15 @@
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-item>
+    <ion-label position="fixed" style="color:#00b7ff">Number 1:</ion-label>
+    <ion-input type="number" [(ngModel)]="a"></ion-input>
+    </ion-item>
+    <ion-item>
+    <ion-label position="fixed" style="color:#00b7ff">Number 2:</ion-label>
+    <ion-input type="number" [(ngModel)]="b"></ion-input>
+    </ion-item>
+    <ion-button (click)="onAdd()" style="float:right">Substraction</ion-button>
+    <p><ion-text style="color:#00b7ff">&emsp;Result:</ion-text>&emsp;{{ result }}</p>
+    
 </ion-content>

@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  result: number
+  p: number = 0;
+  q: number = 0;
+  constructor() {
+    }
+    onAdd(){
+      this.result = this.p + this.q;
+      }
 
 }
