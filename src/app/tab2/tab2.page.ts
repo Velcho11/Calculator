@@ -27,7 +27,7 @@ export class Tab2Page {
 this.storage.get(this.key).then((val)=>{
 console.log('First Number: ',this.a);
 console.log('Second Number:',this.b);
-console.log('Result:',this.result );
+console.log('Result:',this.result )
 })
       }
      }
