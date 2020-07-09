@@ -1,32 +1,41 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Summation (+)
-   
+   Calculator
     </ion-title>
   </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Summation (+)</ion-title>
-    </ion-toolbar>
-  </ion-header>
   
-<ion-item>
-<ion-label position="fixed" style="color:#00b7ff">Number 1:</ion-label>
-<ion-input type="number" [(ngModel)]="p"></ion-input>
-</ion-item>
-<ion-item>
-<ion-label position="fixed" style="color:#00b7ff">Number 2:</ion-label>
-<ion-input type="number" [(ngModel)]="q"></ion-input>
-</ion-item>
-<ion-button (click)="onAdd()" style="float:right">Summation</ion-button>
-<p><ion-text style="color:#00b7ff">&emsp;Result:</ion-text>&emsp;{{ result }}</p>
-<br><br><br>
-<ion-button (click)="Allget()" style="float:right">ViewHistory</ion-button>
-
-
-
+</ion-header>
+<div id="history"></div>
+<ion-content [fullscreen]="true">
+  <br><Br><br>
+<h1 align="center"style="color:#00a6ff">Calculator</h1>
+  <table align="center" border="1">
+    <tr>
+      <td colspan="6"><input type="text" id="result" /></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="1" onclick="dis('1')" /> </td>
+      <td><input type="button" value="2" onclick="dis('2')" /> </td>
+      <td><input type="button" value="3" onclick="dis('3')" /> </td>
+      <td><input type="button"value="+"onclick="dis('+')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="4" onclick="dis('4')" /> </td>
+      <td><input type="button" value="5" onclick="dis('5')" /> </td>
+      <td><input type="button" value="6" onclick="dis('6')" /> </td>
+      <td><input type="button" value="-" onclick="dis('-')" /> </td>
+    </tr>
+    <tr>
+      <td><input type="button" value="7" onclick="dis('7')" /> </td>
+      <td><input type="button" value="8" onclick="dis('8')" /> </td>
+      <td><input type="button" value="9" onclick="dis('9')" /> </td>
+      <td><input type="button" value="*" onclick="dis('*')" /> </td>
+    </tr>
+    <tr><td><input type="button" value="Clear" onclick="clr()" /> </td>
+      <td><input type="button" value="=" onclick="solve()" /> </td>
+      <td><input type="button" value="0" onclick="dis('0')" /> </td>
+      <td><input type="button" value="/" onclick="dis('/')" /> </td>
+    </tr>
+  </table>
 </ion-content>
